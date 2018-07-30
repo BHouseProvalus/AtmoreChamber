@@ -4,6 +4,24 @@
 
 <head>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="~/Content/images/appicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="~/Content/images/appicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/Content/images/appicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/Content/images/appicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/Content/images/appicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="~/Content/images/appicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/Content/images/appicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="~/Content/images/appicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/Content/images/appicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="~/Content/images/appicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/Content/images/appicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="~/Content/images/appicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Content/images/appicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="~/Content/images/appicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -24,7 +42,6 @@
 
 </head>
 
-<header>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -32,58 +49,78 @@
             </div>
         </div>
     </div>
-</header>
 
-
+<!-- Begin Constant Contact Active Forms -->
+<script>var _ctct_m = "3c1da5e6a528520c8335d6f5b5c2fe9e";</script>
+<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+<!-- End Constant Contact Active Forms -->
 
 <body>
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark-teal fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="/Home"><img src="~/Content/images/nav-brand.png" alt="" class="img-fluid" /> #DiscoverAtmore</a>
+        <div id="nav-container" class="container">
+            <div id="nav-container-1" class="col-sm-2">
+                <a class="navbar-brand" href="/Home">@*<img src="~/Content/images/nav-brand.png" alt="" class="img-fluid" />*@ #DiscoverAtmore</a>
+            </div>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAboutAtmore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About Atmore
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownAboutAtmore">
-                            <a class="dropdown-item" href="/AboutAtmore/OurHistory">Our History</a>
-                            <a class="dropdown-item" href="/AboutAtmore/OurCommunity">Our Community</a>
-                            <a class="dropdown-item" href="/AboutAtmore/RelocationAndHelpfulResources">Relocation and Helpful Resources</a>
-                            <a class="dropdown-item" href="/AboutAtmore/InformationRequest">Information Request</a>
+            <div id="nav-container-2" class="col-sm-8">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown middle-align">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAboutAtmore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About Atmore
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownAboutAtmore">
+                                <a class="dropdown-item" href="/AboutAtmore/OurHistory">Our History</a>
+                                <a class="dropdown-item" href="/AboutAtmore/OurCommunity">Our Community</a>
+                                <a class="dropdown-item" href="/AboutAtmore/RelocationAndHelpfulResources">Relocation and Helpful Resources</a>
+                                <a class="dropdown-item" href="/AboutAtmore/InformationRequest">Information Request</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown middle-align">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAtmoreChamber" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About The Chamber
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownAtmoreChamber">
+                                <a class="dropdown-item" href="/AtmoreChamber/ExecutiveBoard">Our Executive Board</a>
+                                <a class="dropdown-item" href="/AtmoreChamber/BoardOfDirectors">Board of Directors</a>
+                                <a class="dropdown-item" href="/AtmoreChamber/Staff">Staff</a>
+                                @if (User.IsInRole("Admin") || User.IsInRole("Member"))
+                                {
+
+                                    <a class="dropdown-item middle-align" href="/Members/Index">Members of the Chamber</a>
+                                }
+
+
+
+
+                            </div>
+                        </li>
+                        <li class="nav-item middle-align">
+                            <a class="nav-link" href="/Calendar/">Calendar</a>
+                        </li>
+
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item middle-align">
+                                <a class="nav-link" href="/Users/Index">Manage Users</a>
+                            </li>
+                        }
+
+                        <li class="nav-item middle-align">
+                            <a class="nav-link" href="#">Shop the Chamber</a>
+                        </li>
+                        <div id="nav-container-3" class="col-sm-1">
+                            <li id="user-account">
+                                @Html.Partial("_LoginPartial")
+                            </li>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAtmoreChamber" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About The Chamber
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownAtmoreChamber">
-                            <a class="dropdown-item" href="/AtmoreChamber/ExecutiveBoard">Our Executive Board</a>
-                            <a class="dropdown-item" href="/AtmoreChamber/BoardOfDirectors">Board of Directors</a>
-                            <a class="dropdown-item" href="/AtmoreChamber/Staff">Staff</a>
+                    </ul>
 
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Calendar/">Calendar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Stay Connected</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shop the Chamber</a>
-                    </li>
-                    <li id="user-account">
-                        @Html.Partial("_LoginPartial")
-                    </li>
-
-                </ul>
-
+                </div>
             </div>
         </div>
     </nav>
@@ -177,8 +214,6 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
     @RenderSection("Scripts", false)
 </body>
 </html>

@@ -7,10 +7,10 @@ namespace AtmoreChamber.Controllers
     public class CalendarController : Controller
     {
         private ApplicationDbContext dc = new ApplicationDbContext();
-        public CalendarController()
-        {
-            dc = new ApplicationDbContext();
-        }
+        //public CalendarController()
+        //{
+        //    dc = new ApplicationDbContext();
+        //}
 
         // GET: Event
         public ActionResult Index()
@@ -31,7 +31,7 @@ namespace AtmoreChamber.Controllers
         public JsonResult SaveEvent(Event e)
         {
             var status = false;
-            using (dc)
+            using (ApplicationDbContext dc = new ApplicationDbContext())
             {
                 if (e.EventID > 0)
                 {

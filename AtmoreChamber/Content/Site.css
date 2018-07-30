@@ -4,6 +4,14 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
+/* Custom Settings */
+.middle-align {
+    /* margin: auto; */
+    vertical-align: middle;
+    /* text-align: center; */
+    /* text-anchor: middle; */
+}
+
 body {
     padding-top: 54px;
     /* background-color: #fcfaea; */
@@ -38,10 +46,11 @@ a {
     color: #21a3a2;
 }
 
-#registerLink {
+#registerLink, #loginLink {
     margin: auto;
-    float: none;
+    float: left;
     vertical-align: middle;
+    color: rgba(255, 255, 255, 0.75);
     text-align: center;
 }
 
@@ -50,6 +59,19 @@ a {
     float: none;
     vertical-align: middle;
     text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+    #user-account a:hover {
+        margin: auto;
+        float: none;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+    }
+
+.user-account {
+    display: inline;
 }
 
 .bg-dark-teal {
@@ -105,6 +127,21 @@ div .middle-align {
 .w-52 {
     margin: auto;
     width: 52% !important;
+}
+
+#nav-container-1 {
+    vertical-align: middle;
+    padding: 0;
+}
+
+#nav-container-2 {
+    margin-right: 100px;
+    padding: 0 0 0 0;
+}
+
+#nav-container-3 {
+    margin-left: 20px;
+    padding: 0;
 }
 
 .navbar-brand {
@@ -347,6 +384,7 @@ footer {
     border-top: 4px solid #db303e;
 }
 
+
 .sponsor-hr {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -357,15 +395,23 @@ footer {
 
 /* Sponsors START */
 .sponsor-image {
+    margin: 8px 0 8px 0;
     height: auto;
     width: auto;
     max-height: 100%;
     max-width: 100%;
-    margin: 8px 0 8px 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.landscape-image {
+    max-width: 100%;
 }
 
 .sponsor-heading {
     color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    align-items: center;
 }
 
 .sponsor-row {

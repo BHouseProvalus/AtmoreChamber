@@ -113,7 +113,6 @@ C:\Users\John Butterfield\source\repos\AtmoreChamber\AtmoreChamber\bin\Microsoft
 C:\Users\John Butterfield\source\repos\AtmoreChamber\AtmoreChamber\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\John Butterfield\source\repos\AtmoreChamber\AtmoreChamber\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\John Butterfield\source\repos\AtmoreChamber\AtmoreChamber\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\John Butterfield\source\repos\AtmoreChamber\AtmoreChamber\obj\Debug\AtmoreChamber.csprojAssemblyReference.cache
 C:\Users\John Butterfield\source\repos\AtmoreChamber\AtmoreChamber\obj\Debug\AtmoreChamber.csproj.CoreCompileInputs.cache
 C:\Users\John Butterfield\source\repos\AtmoreChamber\AtmoreChamber\obj\Debug\AtmoreChamber.csproj.CopyComplete
 C:\Users\John Butterfield\source\repos\AtmoreChamber\AtmoreChamber\obj\Debug\AtmoreChamber.dll
@@ -121,3 +120,4 @@ C:\Users\John Butterfield\source\repos\AtmoreChamber\AtmoreChamber\obj\Debug\Atm
 C:\Users\John Butterfield\Source\Repos\AtmoreChamber\AtmoreChamber\obj\Debug\AtmoreChamber.Migrations.InitialCreate.resources
 C:\Users\John Butterfield\Source\Repos\AtmoreChamber\AtmoreChamber\obj\Debug\AtmoreChamber.csproj.GenerateResource.cache
 C:\Users\John Butterfield\Source\Repos\AtmoreChamber\AtmoreChamber\obj\Debug\AtmoreChamber.Migrations.eventsmigration.resources
+C:\Users\John Butterfield\Source\Repos\AtmoreChamber\AtmoreChamber\obj\Debug\AtmoreChamber.csprojAssemblyReference.cache
